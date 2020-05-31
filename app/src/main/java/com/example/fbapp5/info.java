@@ -3,6 +3,8 @@ package com.example.fbapp5;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -94,6 +96,14 @@ public class info extends AppCompatActivity implements AdapterView.OnItemClickLi
         super.onStart();
     }
 
+    /**
+     * This method shows the information and you can click on what you want to delete
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
+
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view,final int pos, long id) {
         if(adapterView==lv){
@@ -156,5 +166,34 @@ public class info extends AppCompatActivity implements AdapterView.OnItemClickLi
 
 
         }
+
+    }
+
+    /**
+     * These methods creates the menu
+     * @param menu
+     * @return
+     */
+
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+        String st = item.getTitle().toString();
+        if (st.equals("main")){
+            Intent si = new Intent(this, MainActivity.class);
+            startActivity(si);
+        }
+        if(st.equals("sort")){
+            Intent si = new Intent(this, sort.class);
+            startActivity(si);
+        }
+        if (st.equals("creds")){
+            Intent si = new Intent(this, credits.class);
+            startActivity(si);
+        }
+        return true;
     }
 }

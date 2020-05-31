@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         ETID = findViewById(R.id.ID);
     }
 
+    /**
+     * This mthod saves the information in the students edit texts on the data base
+     * @param view
+     */
     public void fstsub(View view) {
         name = etNAME.getText().toString();
         Mname = etMNAME.getText().toString();
@@ -56,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
         refStudents.child(ID).setValue(S);
     }
 
+    /**
+     * This mthod saves the information in the grades edit texts on the data base
+     * @param view
+     */
+
     public void sndsub(View view) {
 
 
@@ -67,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
         Grade G = new Grade(GID, Gname, Subject, grade, quarter);
         refGrades.child(GID).setValue(G);
     }
+
+    /**
+     * creates options menu
+     * @return
+     */
+
+
 
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main,menu);

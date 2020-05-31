@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:gravity="center"
-    tools:context=".info">
+    tools:context=".sort">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -54,12 +54,14 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By Id" />
+                android:text="By Id"
+                android:onClick="byid1"/>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="byname"
                 android:text="By Name" />
 
             <Space
@@ -109,13 +111,15 @@
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By Id" />
+                android:text="By Id"
+                android:onClick="byid2"/>
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By Grade" />
+                android:text="By Grade"
+                android:onClick="bygrade"/>
 
             <Space
                 android:layout_width="match_parent"
