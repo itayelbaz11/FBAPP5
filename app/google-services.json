@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "763574898064",
+    "firebase_url": "https://newest-4153e.firebaseio.com",
+    "project_id": "newest-4153e",
+    "storage_bucket": "newest-4153e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763574898064:android:26a7238da490906ff87715",
+        "android_client_info": {
+          "package_name": "com.elbaz.itai.FBAPP5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763574898064-o3f62rttt0v96mp0ctue5jdurt067p19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoPHjZ0WyJyfszDNUltrpMcK7Fz9YPOj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763574898064-o3f62rttt0v96mp0ctue5jdurt067p19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
