@@ -68,4 +68,26 @@ public class MainActivity extends AppCompatActivity {
         refGrades.child(GID).setValue(G);
     }
 
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+        String st = item.getTitle().toString();
+        if (st.equals("info")){
+            Intent si = new Intent(this, info.class);
+            startActivity(si);
+        }
+        if(st.equals("sort")){
+            Intent si = new Intent(this,sort.class);
+            startActivity(si);
+        }
+        if (st.equals("creds")){
+            Intent si = new Intent(this,credits.class);
+            startActivity(si);
+        }
+        return true;
+    }
+
 }

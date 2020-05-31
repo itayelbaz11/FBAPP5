@@ -17,4 +17,9 @@ public class Grade {
         this.Grade= Grade;
         this.Quarter=Quarter;
     }
+
+
+
+
+
 }

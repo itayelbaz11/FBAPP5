@@ -27,4 +27,8 @@ public class Student {
         this.MPhone=MPhone;
         this.Hphone=Hphone;
     }
+
+
+    
+
 }
